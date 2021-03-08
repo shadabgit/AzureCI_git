@@ -5,6 +5,10 @@
 
 trigger:
 - main
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: 'https://github.com/shadabgit/AzureCI_gitRepo.git'
 
 pool:
   vmImage: 'windows-latest'
